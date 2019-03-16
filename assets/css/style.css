@@ -1,0 +1,105 @@
+body, html {
+  height: 100%;
+}
+
+.container-fluid {
+    height: 100%;
+    padding: 0;
+}
+
+.fullBackgroundimage {
+    background-image: url("../images/MonkeesWide.jpg");
+    height: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logoImage {
+    position: absolute;
+    bottom: 15%;
+    right: 5%;
+    width: 80%;
+    transform: rotate(-25deg);
+}
+
+.headerNavBar {
+    margin: 0;
+    height: 10%;
+    text-align: center;
+    color: #e80815;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4.5vw;
+    font-weight: bold;
+ /*   border-width: 3px;
+    border-color: blue;
+    border-style: dotted;
+*/
+}
+
+.footerSocials {
+/*    border-color: red;
+    border-width: 3px;
+    border-style: solid;*/
+    height: 90%;
+    margin: 0;
+}
+
+.socialIcons {
+    text-align: left;
+    color: #D3D3D3;
+    font-size: 9vw;
+/*    border: 3px solid green; */
+    padding-left: 0px;
+    padding-bottom: 15px;
+}
+
+.fa-facebook, .fa-twitter, .fa-instagram {
+    color: #D3D3D3;
+    padding-right: 6px;
+}
+
+@media (min-width: 1200px), (min-aspect-ratio: 1/1) {
+    .logoImage {
+        position: absolute;
+        top: 30%;
+        left: 2%;
+        width: 38%;
+        transform: rotate(-30deg);
+    }
+    
+    .headerNavBar {
+        padding-top: 2vh;
+        font-size: 5vh;
+    }
+    
+    .socialIcons {
+        text-align: right;
+        color: #D3D3D3;
+        font-size: 5vw;
+/*      border: 3px solid green; */
+        padding-left: 10px;
+        padding-bottom: 15px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+.nav-link {
+    color: #8D3F33;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+*/
