@@ -19,6 +19,9 @@ version 4 which I used.
 
 using color picker (chrome extension tool) for red navbar fontcolor, same as logo. To stand out.
 
-The font size for the nav bar is dependant on the viewport width for scaling purposes, however, as with the logo it messes up when the viewport gets relatively wide, the same breakpoint of 1:1 is applied.
+The font size for the nav bar is dependent on the viewport width for scaling
+purposes, however, as with the logo it messes up when the viewport gets 
+relatively wide, at the same breakpoint of 1:1. So I added a media query for
+wide viewports and also the 1:1 aspect ratio,.
 
-!!One monkee falls of the screen small viewports sadly.
+

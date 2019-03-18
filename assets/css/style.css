@@ -2,6 +2,12 @@ body, html {
   height: 100%;
 }
 
+p {
+    font-size: 40px;
+    overflow-y: auto;
+    height: 100%;
+}
+
 .container-fluid {
     height: 100%;
     padding: 0;
@@ -15,7 +21,6 @@ body, html {
     background-size: cover;
     position: fixed;
     min-width: 100%;
-/*    z-index: -1;*/
 }
 
 .logoImage {
@@ -29,38 +34,58 @@ body, html {
 
 .headerNavBar {
     margin: 0;
-    height: 10%;
+    height: 15%;
     text-align: center;
     color: #e80815;
     font-family: 'Poppins', sans-serif;
     font-size: 4.5vw;
     font-weight: bold;
+    /*border: 2px solid blue;*/
 }
 
 .nav-element {
    color: #e80815; 
 }
 
-.footerSocials {
-/*    border-color: red;
-    border-width: 3px;
-    border-style: solid;*/
-    height: 90%;
+.sectionContainer {
+    height: 70%;
     margin: 0;
+    overflow-y: auto;
+    /*border: 2px dotted purple;*/
+}
+
+.sectionRow {
+    border: 2px solid green;
+    width: 80%;
+    /*overflow-y: auto;*/
+    /*height: 50%;*/
+}
+
+.memberGrid {
+    /*overflow-y: auto;*/
+    /*height: 100%;*/
+    border:2px solid blue;
+}
+
+
+.footerSocials {
+    height: 15%;
+    margin: 0;
+/*    border: 2px solid red; */
+    text-align: right;
 }
 
 .socialIcons {
-    text-align: left;
     color: #D3D3D3;
-    font-size: 9vw;
-/*    border: 3px solid green; */
-    padding-left: 0px;
-    padding-bottom: 15px;
+    font-size: 5vh;
+    /*border: 3px solid green;*/
+    padding-right:3vw;
 }
 
 .fa-facebook, .fa-twitter, .fa-instagram {
     color: #D3D3D3;
-    padding-right: 6px;
+    padding-right: 15px;
+
 }
 
 @media (min-width: 1200px), (min-aspect-ratio: 1/1) {
@@ -74,16 +99,14 @@ body, html {
     }
     
     .headerNavBar {
-        padding-top: 2vh;
+        padding-top: 1.5vh;
         font-size: 5vh;
     }
     
     .socialIcons {
-        text-align: right;
         color: #D3D3D3;
-        font-size: 5vw;
-        padding-left: 10px;
-        padding-bottom: 15px;
+        font-size: 7vh;
+        padding-right: 5vw;
     }
 }
 
