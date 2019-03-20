@@ -55,16 +55,17 @@ p {
 }
 
 .sectionRow {
-    border: 2px solid green;
+    /*border: 2px solid green;*/
     width: 80%;
     /*overflow-y: auto;*/
     /*height: 50%;*/
+    background-color: black;
 }
 
 .memberGrid {
     /*overflow-y: auto;*/
     /*height: 100%;*/
-    border:2px solid blue;
+    /*border:2px solid blue;*/
 }
 
 
@@ -110,8 +111,30 @@ p {
     }
 }
 
+/* Content section info.html*/
+/*------ Bandmember pictures on info page*/
 
+.pictureBandmember {
+    border-radius: 50%;
+    display: block;
+    margin: 5% auto 5% auto;
+}
 
+.nameBandmember {
+    text-align: center;
+    color: #d6c5c6;
+    padding-bottom: 2%;
+    
+}
+
+/*----- description*/
+
+.descBandmember {
+    color: #d6c5c6;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 
