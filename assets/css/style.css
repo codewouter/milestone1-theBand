@@ -1,18 +1,11 @@
 body, html {
   height: 100%;
 }
-
-p {
-    font-size: 40px;
-    overflow-y: auto;
-    height: 100%;
-}
-
 .container-fluid {
     height: 100%;
     padding: 0;
 }
-
+/*-------------------- background (all pages)*/
 .fullBackgroundimage {
     background-image: url("../images/monkeesWide.jpg");
     height: 100%;
@@ -22,7 +15,7 @@ p {
     position: fixed;
     min-width: 100%;
 }
-
+/*-------------------- Logo (landing page only) */
 .logoImage {
     position: absolute;
     bottom: 15%;
@@ -31,7 +24,7 @@ p {
     transform: rotate(-25deg);
     z-index: 1;
 }
-
+/*-------------------- general header (nav bar) */
 .headerNavBar {
     margin: 0;
     height: 15%;
@@ -42,55 +35,137 @@ p {
     font-weight: bold;
     /*border: 2px solid blue;*/
 }
-
 .nav-element {
-   color: #e80815; 
+   color: #e80815;
 }
+.nav-element:hover {
+  text-decoration: none;
+  font-size: 1.1em;
+   color: #e80815;
+}
+/*----------------------------- Section containers and custom scrollbar */
 
 .sectionContainer {
     height: 70%;
-    margin: 0;
-    overflow-y: auto;
-    /*border: 2px dotted purple;*/
-}
-
-.sectionRow {
-    /*border: 2px solid green;*/
     width: 80%;
-    /*overflow-y: auto;*/
-    /*height: 50%;*/
-    background-color: black;
+    margin: auto;
+    background: #00000;
+    background: rgba(0,0,0,0.7);
+    overflow-y: scroll;
+    border-radius: 50px;
 }
-
-.memberGrid {
+.sectionContainerIndexPage {
+    height: 70%;
+    width: 80%;
+    margin: auto;
+    /*background: rgba(0,0,0,0.7);*/
     /*overflow-y: auto;*/
-    /*height: 100%;*/
-    /*border:2px solid blue;*/
+    border-radius: 50px;
 }
-
-
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: transparent;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+::-webkit-scrollbar {
+	width: 12px;
+	background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: grey;
+}
+/*------------------------------- General footer*/
 .footerSocials {
     height: 15%;
     margin: 0;
-/*    border: 2px solid red; */
     text-align: right;
 }
-
 .socialIcons {
     color: #D3D3D3;
-    font-size: 5vh;
-    /*border: 3px solid green;*/
-    padding-right:3vw;
+    font-size: 6vh;
+    padding-right:5vw;
 }
-
-.fa-facebook, .fa-twitter, .fa-instagram {
+.socialIcons a {
+    padding-left:2vw;
+}
+.socialIcons a i {
     color: #D3D3D3;
-    padding-right: 15px;
-
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;    
 }
-
-@media (min-width: 1200px), (min-aspect-ratio: 1/1) {
-
+.socialIcons a i:hover {
+    color: #e80815;
+}
+/*------------------------- info page*/
+.bandMember {
+    margin: 2vh 0 0 0;
+    width: 100%;
+}
+.pictureNameBtnBandmember {
+    padding:0;
+}
+.pictureBandmember {
+    border-radius: 30%;
+    display: block;
+    margin: 7vh auto 2vh auto;
+}
+.nameBandmember {
+    text-align: center;
+    color: #d6c5c6;
+    padding-bottom: 2%;
+}
+.moreInfoButton {
+    display:block !important;
+    color: #FAFAFA!important;
+    border-radius: 100px!important;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    border: 1px solid #FAFAFA!important;
+    background-color: #417d2f!important;
+    box-shadow: 0 0 0 0.2rem grey!important;
+}
+.collapsed {
+    background-color: #463939!important;
+}
+.descBandmember {
+    color: #d6c5c6;
+    display: block;
+    margin:2vh auto 2vh auto;
+}
+/*-------------------------- media page*/
+.pictureHeader {
+    text-align: center;
+    color: #d6c5c6;
+    padding: 0;
+}
+.pictureWrapper {
+    max-width: 100%;
+}
+.videoDisplayHeader {
+    text-align: center;
+    color: #d6c5c6;
+    padding: 0;
+}
+.videoDisplayWrapper {
+    padding:0;
+    width:100%;
+}
+.videoDisplay {
+    display: block;
+    width: 30vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0vh;
+}
+/*---------------------------Media queries */
+@media (min-aspect-ratio: 1/1) {
     .logoImage {
         position: absolute;
         top: 30%;
@@ -98,56 +173,28 @@ p {
         width: 38%;
         transform: rotate(-30deg);
     }
-    
     .headerNavBar {
         padding-top: 1.5vh;
         font-size: 5vh;
     }
-    
     .socialIcons {
         color: #D3D3D3;
-        font-size: 7vh;
+        font-size: 9vh;
         padding-right: 5vw;
+        padding-left: 5vw;
+    }
+    .moreInfoButton {
+        visibility: hidden;
+    }
+/*change to class*/
+    #toggleText01,#toggleText02,#toggleText03,#toggleText04 {
+        display: block;
     }
 }
-
-/* Content section info.html*/
-/*------ Bandmember pictures on info page*/
-
-.pictureBandmember {
-    border-radius: 50%;
-    display: block;
-    margin: 5% auto 5% auto;
-}
-
-.nameBandmember {
-    text-align: center;
-    color: #d6c5c6;
-    padding-bottom: 2%;
-    
-}
-
-/*----- description*/
-
-.descBandmember {
-    color: #d6c5c6;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+@media screen and (min-width: 1025px) {
+    .pictureBandmember {
+        margin: 2vh auto 2vh auto;
+    }   
 }
 
 
-
-
-
-
-
-
-/*
-.nav-link {
-    color: #8D3F33;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-}
-*/
